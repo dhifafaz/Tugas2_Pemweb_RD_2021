@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="keywords" content="Tugas Pemrograman Web" />
+    <meta name="author" content="Dhifaf Athiyah Zhabiyan - 119140047" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Title -->
+    <title>Tugas 2 PEMWEB RD - Dhifafa Athiyah Z - 119140047</title>
+
+    <!-- Styling and logo -->
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="../assets/images/dhifaf.jpeg"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link href="assets/css/index.css" rel="stylesheet" />
+    <style>
+      body {
+        font-family: "Ubuntu", sans-serif;
+        color: #282c35 !important;
+      }
+      a {
+        color: #282c35 !important;
+      }
+    </style>
+  </head>
+  <bod>
+    <script>
+      window.addEventListener("load", function () {
+        var cssSelector = "input[type=text], input[type=password]";
+        var fields = document.querySelectorAll(cssSelector);
+        for (i=0; i<fields.length; i++){
+          fields[i].addEventListener("focus", setBackground);
+          fields[i].addEventListener("blur", setBackground);
+        }
+      });
+    </script>
+    <div class="container">
+      <div class="registration-card">
+        <form class="registration-form" method="GET" action="info.html">
+          <h1 style="text-align: center; color: #fff">Registration Form</h1>
+          <label for="name">Name</label>
+          <div class="input-field">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Enter your name"
+            />
+          </div>
+
+          <label for="email">Email</label>
+          <div class="input-field">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your email"
+            />
+          </div>
+
+          <label for="password">Password</label>
+          <div class="input-field">
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Enter your password"
+            />
+          </div>
+
+          <label for="age">Age</label>
+          <div class="input-field">
+            <input
+              type="number"
+              name="age"
+              id="age"
+              placeholder="Enter your age"
+            />
+          </div>
+
+          <div
+            class="input-field"
+            style="
+              margin-top: 10px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            "
+          >
+            <button type="submit" class="btn">Register</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script>
+    function setBackground(e){
+        if (e.type == "focus"){
+            e.target.style.backgroundColor = "#FFE393";
+        }
+        else if (e.type == "blur"){
+            e.target.style.backgroundColor = "#f2f2f2";
+        }
+    }
+</script>
+</html>

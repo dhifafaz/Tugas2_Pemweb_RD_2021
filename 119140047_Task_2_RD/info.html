@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="keywords" content="Tugas Pemrograman Web" >
+            <meta name="author" content="Dhifaf Athiyah Zhabiyan - 119140047" >
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            
+            <!-- Title -->
+            <title>Tugas 2 PEMWEB RD - Dhifafa Athiyah Z - 119140047</title>
+            
+            <!-- Styling and logo -->
+            <link rel="shortcut icon" type="image/png" href="../assets/images/dhifaf.jpeg" >
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap" rel="stylesheet">
+            <link href="assets/css/index.css" rel="stylesheet">
+            <style>
+                body {
+                    font-family: 'Ubuntu', sans-serif;
+                    color: #282C35 !important;
+                }
+                a{
+                    color: #282C35 !important;
+                }
+            </style>
+            <script>
+                const params = new URLSearchParams(window.location.search);
+                const name = params.get('name');
+                const email = params.get('email');
+                const password = params.get('password');
+                const age = params.get('age');
+                // console.log(name);
+                // console.log(email);
+                // console.log(password);
+                // console.log(age);
+                window.onload = function() {
+                    document.getElementById("name").value = name;
+                    document.getElementById("email").value = email;
+                    document.getElementById("password").value = password;
+                    document.getElementById("age").value = age;
+                };
+            </script>
+    </head>
+    <bod>
+        <div class="back-button">
+            <a class="button" href="index.html">
+                Kembali
+            </a>
+        </div>
+        <div class="container">
+            <div class="registration-card">
+                <div class="registration-form">
+                    <h1 style="text-align: center; color: #fff;">Your Accunt Info</h1>
+                    <label for="name">Name</label>
+                    <div class="input-field">
+                        <input type="text" name="name" id="name" placeholder="Enter your name" value="" disabled >
+                    </div>
+
+                    <label for="email">Email</label>
+                    <div class="input-field">
+                        <input type="email" name="email" id="email" placeholder="Enter your email" value="" disabled>
+                    </div>
+
+                    <label for="password">Password</label>
+                    <div class="input-field">
+                        <input type="password" name="password" id="password" placeholder="Enter your password" value="" disabled>
+                    </div>
+
+                    <label for="age">Age</label>
+                    <div class="input-field">
+                        <input type="number" name="age" id="age" placeholder="Enter your age" value="" disabled>
+                    </div>
+                    <h3 style="text-align: center; color: #fff;">Please check your email to verify your account!</h3>
+                </div>
+            </div>
+            
+        </div>
+    </bod>
+
+</html> 
